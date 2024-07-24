@@ -1,0 +1,14 @@
+//this is where we store products that can be used across this project
+[
+
+{
+    "productName": "ADIDAS ORIGINAL"
+},
+{
+    "productName": "ZARA COAT 3"
+},
+{
+    "productName": "IPHONE 13 PRO"
+}
+
+]
