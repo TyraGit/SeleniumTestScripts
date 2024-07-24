@@ -1,20 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="2" passed="1" failed="0" skipped="1">
+<testng-results ignored="0" total="3" passed="2" failed="0" skipped="1">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-07-24T23:48:02 MYT" name="TestSuite1" finished-at="2024-07-24T23:48:04 MYT" duration-ms="2034">
+  <suite started-at="2024-07-25T01:42:35 MYT" name="FunctionalTesting" finished-at="2024-07-25T01:42:38 MYT" duration-ms="2711">
     <groups>
     </groups>
-    <test started-at="2024-07-24T23:48:02 MYT" name="Functional Tests" finished-at="2024-07-24T23:48:04 MYT" duration-ms="2034">
-      <class name="athirahrahmat.TestCases.LoginSuccessfully">
-        <test-method is-config="true" signature="navigateToURL()[pri:0, instance:athirahrahmat.TestCases.LoginSuccessfully@38c6f217]" started-at="2024-07-24T23:48:04 MYT" name="navigateToURL" finished-at="2024-07-24T23:48:04 MYT" duration-ms="2" status="FAIL">
+    <test started-at="2024-07-25T01:42:35 MYT" name="Functional Testing" finished-at="2024-07-25T01:42:35 MYT" duration-ms="21">
+      <class name="athirahrahmat.TestCases.Login">
+        <test-method is-config="true" signature="navigateToURL()[pri:0, instance:athirahrahmat.TestCases.Login@16293aa2]" started-at="2024-07-25T01:42:35 MYT" name="navigateToURL" finished-at="2024-07-25T01:42:35 MYT" duration-ms="1" status="FAIL">
           <exception class="java.lang.NullPointerException">
             <message>
               <![CDATA[Cannot invoke "org.openqa.selenium.WebDriver.get(String)" because "this.driver" is null]]>
             </message>
             <full-stacktrace>
               <![CDATA[java.lang.NullPointerException: Cannot invoke "org.openqa.selenium.WebDriver.get(String)" because "this.driver" is null
-at athirahrahmat.TestCases.BaseTest.navigateToURL(BaseTest.java:27)
+at athirahrahmat.Utils.BaseTest.navigateToURL(BaseTest.java:29)
 at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
@@ -29,13 +29,9 @@ at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInv
 at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
 at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
 at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
-at org.testng.TestRunner.privateRun(TestRunner.java:739)
-at org.testng.TestRunner.run(TestRunner.java:614)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:463)
-at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
+at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
 at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+at org.testng.internal.thread.graph.TestNGFutureTask.run(TestNGFutureTask.java:22)
 at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
 at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
 at java.base/java.lang.Thread.run(Thread.java:1570)
@@ -45,14 +41,14 @@ at java.base/java.lang.Thread.run(Thread.java:1570)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- navigateToURL -->
-        <test-method signature="login()[pri:0, instance:athirahrahmat.TestCases.LoginSuccessfully@38c6f217]" started-at="2024-07-24T23:48:04 MYT" name="login" finished-at="2024-07-24T23:48:04 MYT" duration-ms="0" status="SKIP">
+        <test-method signature="login()[pri:0, instance:athirahrahmat.TestCases.Login@16293aa2]" started-at="2024-07-25T01:42:35 MYT" name="login" finished-at="2024-07-25T01:42:35 MYT" duration-ms="0" status="SKIP">
           <exception class="java.lang.NullPointerException">
             <message>
               <![CDATA[Cannot invoke "org.openqa.selenium.WebDriver.get(String)" because "this.driver" is null]]>
             </message>
             <full-stacktrace>
               <![CDATA[java.lang.NullPointerException: Cannot invoke "org.openqa.selenium.WebDriver.get(String)" because "this.driver" is null
-at athirahrahmat.TestCases.BaseTest.navigateToURL(BaseTest.java:27)
+at athirahrahmat.Utils.BaseTest.navigateToURL(BaseTest.java:29)
 at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
@@ -67,13 +63,9 @@ at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInv
 at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
 at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
 at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
-at org.testng.TestRunner.privateRun(TestRunner.java:739)
-at org.testng.TestRunner.run(TestRunner.java:614)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:463)
-at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
+at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:572)
 at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
+at org.testng.internal.thread.graph.TestNGFutureTask.run(TestNGFutureTask.java:22)
 at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
 at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
 at java.base/java.lang.Thread.run(Thread.java:1570)
@@ -83,21 +75,35 @@ at java.base/java.lang.Thread.run(Thread.java:1570)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- login -->
-      </class> <!-- athirahrahmat.TestCases.LoginSuccessfully -->
-      <class name="athirahrahmat.TestCases.GetPageTitle">
-        <test-method is-config="true" signature="initializeBrowser()[pri:0, instance:athirahrahmat.TestCases.GetPageTitle@16293aa2]" started-at="2024-07-24T23:48:00 MYT" name="initializeBrowser" finished-at="2024-07-24T23:48:02 MYT" duration-ms="1740" status="PASS">
+      </class> <!-- athirahrahmat.TestCases.Login -->
+    </test> <!-- Functional Testing -->
+    <test started-at="2024-07-25T01:42:35 MYT" name="Negative Testing" finished-at="2024-07-25T01:42:38 MYT" duration-ms="2658">
+      <class name="athirahrahmat.TestCases.InvalidCredential">
+        <test-method is-config="true" signature="initializeBrowser()[pri:0, instance:athirahrahmat.TestCases.InvalidCredential@3023df74]" started-at="2024-07-25T01:42:34 MYT" name="initializeBrowser" finished-at="2024-07-25T01:42:35 MYT" duration-ms="1396" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initializeBrowser -->
-        <test-method is-config="true" signature="navigateToURL()[pri:0, instance:athirahrahmat.TestCases.GetPageTitle@16293aa2]" started-at="2024-07-24T23:48:02 MYT" name="navigateToURL" finished-at="2024-07-24T23:48:04 MYT" duration-ms="1994" status="PASS">
+        <test-method is-config="true" signature="navigateToURL()[pri:0, instance:athirahrahmat.TestCases.InvalidCredential@3023df74]" started-at="2024-07-25T01:42:35 MYT" name="navigateToURL" finished-at="2024-07-25T01:42:37 MYT" duration-ms="2062" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- navigateToURL -->
-        <test-method signature="getWebPageTitle()[pri:0, instance:athirahrahmat.TestCases.GetPageTitle@16293aa2]" started-at="2024-07-24T23:48:04 MYT" name="getWebPageTitle" finished-at="2024-07-24T23:48:04 MYT" duration-ms="16" status="PASS">
+        <test-method signature="wrongPassword()[pri:0, instance:athirahrahmat.TestCases.InvalidCredential@3023df74]" started-at="2024-07-25T01:42:37 MYT" name="wrongPassword" finished-at="2024-07-25T01:42:38 MYT" duration-ms="367" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- getWebPageTitle -->
-      </class> <!-- athirahrahmat.TestCases.GetPageTitle -->
-    </test> <!-- Functional Tests -->
-  </suite> <!-- TestSuite1 -->
+        </test-method> <!-- wrongPassword -->
+        <test-method is-config="true" signature="navigateToURL()[pri:0, instance:athirahrahmat.TestCases.InvalidCredential@3023df74]" started-at="2024-07-25T01:42:38 MYT" name="navigateToURL" finished-at="2024-07-25T01:42:38 MYT" duration-ms="52" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- navigateToURL -->
+        <test-method signature="wrongUsername()[pri:0, instance:athirahrahmat.TestCases.InvalidCredential@3023df74]" started-at="2024-07-25T01:42:38 MYT" name="wrongUsername" finished-at="2024-07-25T01:42:38 MYT" duration-ms="172" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- wrongUsername -->
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:athirahrahmat.TestCases.InvalidCredential@3023df74]" started-at="2024-07-25T01:42:38 MYT" name="closeBrowser" finished-at="2024-07-25T01:42:38 MYT" duration-ms="89" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+      </class> <!-- athirahrahmat.TestCases.InvalidCredential -->
+    </test> <!-- Negative Testing -->
+  </suite> <!-- FunctionalTesting -->
 </testng-results>

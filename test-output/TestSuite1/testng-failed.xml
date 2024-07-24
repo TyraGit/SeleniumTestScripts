@@ -1,15 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-<suite thread-count="2" parallel="tests" name="Failed suite [TestSuite1]" guice-stage="DEVELOPMENT">
-  <test thread-count="2" parallel="tests" name="Functional Tests(failed)">
+<suite parallel="tests" name="Failed suite [TestSuite1]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" parallel="tests" name="Get Page Title(failed)">
     <classes>
-      <class name="athirahrahmat.TestCases.LoginSuccessfully">
+      <class name="athirahrahmat.TestCases.Login">
         <methods>
+          <include name="closeBrowser"/>
           <include name="initializeBrowser"/>
           <include name="navigateToURL"/>
           <include name="login"/>
         </methods>
-      </class> <!-- athirahrahmat.TestCases.LoginSuccessfully -->
+      </class> <!-- athirahrahmat.TestCases.Login -->
     </classes>
-  </test> <!-- Functional Tests(failed) -->
+  </test> <!-- Get Page Title(failed) -->
 </suite> <!-- Failed suite [TestSuite1] -->

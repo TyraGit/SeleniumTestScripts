@@ -5,8 +5,9 @@
     <classes>
       <class name="athirahrahmat.TestCases.LoginSuccessfully">
         <methods>
-          <include name="initializeBrowser"/>
           <include name="closeBrowser"/>
+          <include name="initializeBrowser"/>
+          <include name="navigateToURL"/>
           <include name="login"/>
         </methods>
       </class> <!-- athirahrahmat.TestCases.LoginSuccessfully -->

@@ -2,6 +2,8 @@ package athirahrahmat.TestCases;
 
 import org.testng.annotations.Test;
 
+import athirahrahmat.Utils.BaseTest;
+
 public class GetPageTitle extends BaseTest {
 
     @Test

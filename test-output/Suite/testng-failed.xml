@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite parallel="tests" name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" parallel="tests" name="Open Browser(failed)">
+    <classes>
+      <class name="athirahrahmat.TestCases.GetPageTitle">
+        <methods>
+          <include name="closeBrowser"/>
+          <include name="initializeBrowser"/>
+          <include name="navigateToURL"/>
+          <include name="getWebPageTitle"/>
+        </methods>
+      </class> <!-- athirahrahmat.TestCases.GetPageTitle -->
+    </classes>
+  </test> <!-- Open Browser(failed) -->
+</suite> <!-- Failed suite [Suite] -->
