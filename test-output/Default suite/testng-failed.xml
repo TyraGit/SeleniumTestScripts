@@ -3,14 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="athirahrahmat.TestCases.LoginSuccessfully">
+      <class name="athirahrahmat.TestCases.SubmitOrder">
         <methods>
           <include name="closeBrowser"/>
-          <include name="initializeBrowser"/>
-          <include name="navigateToURL"/>
-          <include name="login"/>
+          <include name="verifyOrderSubmitted"/>
+          <include name="invokeBrowser"/>
         </methods>
-      </class> <!-- athirahrahmat.TestCases.LoginSuccessfully -->
+      </class> <!-- athirahrahmat.TestCases.SubmitOrder -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

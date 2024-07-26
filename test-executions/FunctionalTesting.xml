@@ -1,15 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="FunctionalTesting" parallel="classes" thread-count="4">
+<suite name="FunctionalTesting" parallel="tests" thread-count="5">
     <test name="Functional Testing">
         <classes>
             <class name="athirahrahmat.TestCases.Login"/>
-        </classes>
-    </test>
-    <test name="Negative Testing">
-        <classes>
-            <class name="athirahrahmat.TestCases.InvalidCredential"/>
+            <class name="athirahrahmat.TestCases.AddToCart"/>
+            <class name="athirahrahmat.TestCases.ViewCart"/>
+            <class name="athirahrahmat.TestCases.Checkout"/>
+            <class name="athirahrahmat.TestCases.SubmitOrder"/>
         </classes>
     </test>
 </suite>
-
