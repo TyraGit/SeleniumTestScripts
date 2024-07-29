@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Functional Test Suite" parallel="tests" thread-count="5">
+<test name="Sanity Testing">
+    	<classes>
+    		<class name="athirahrahmat.TestScripts.Login"/>
+            <class name="athirahrahmat.TestScripts.AddMoreThan1Product"/>
+            <class name="athirahrahmat.TestScripts.ViewCartIFMore1Product"/>
+            <class name="athirahrahmat.TestScripts.Checkout2"/>
+            <class name="athirahrahmat.TestScripts.SubmitMoreProducts"/>
+    	</classes>
+</test>
+</suite>

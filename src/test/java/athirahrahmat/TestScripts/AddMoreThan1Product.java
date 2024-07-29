@@ -14,7 +14,7 @@ import athirahrahmat.Utils.BaseTest;
 public class AddMoreThan1Product extends BaseTest {
 	//this test script is for MORE THAN 1 product to add to cart
 
-    @Test(dependsOnMethods = {"athirahrahmat.TestScripts.AddToCart.selectProduct"})
+    @Test(dependsOnMethods = {"athirahrahmat.TestScripts.Login.login"})
     public void selectProducts() {
         WebDriverWait buffer = new WebDriverWait(driver, Duration.ofSeconds(15));
         try {
@@ -22,7 +22,7 @@ public class AddMoreThan1Product extends BaseTest {
             System.out.println("Products are visible on the page.");
 
             // Define the product names to add to the cart
-            String[] productNames = {"IPHONE 13 PRO", "ADIDAS ORIGINAL"};
+            String[] productNames = {"ZARA COAT 3", "IPHONE 13 PRO", "ADIDAS ORIGINAL"};
 
             // Loop through the product names and add each to the cart
             for (String productName : productNames) {

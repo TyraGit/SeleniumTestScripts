@@ -11,9 +11,9 @@ import org.testng.annotations.Test;
 
 import athirahrahmat.Utils.BaseTest;
 
-public class Checkout extends BaseTest {
+public class Checkout2 extends BaseTest {
 
-    @Test(dependsOnMethods = {"athirahrahmat.TestScripts.ViewCart.verifyProdInCart"})
+    @Test(dependsOnMethods = {"athirahrahmat.TestScripts.ViewCartIFMore1Product.verifyProdInCart"})
     public void clickCheckout() {
 	    WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
 	    
