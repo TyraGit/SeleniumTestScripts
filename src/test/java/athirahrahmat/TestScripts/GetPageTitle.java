@@ -1,4 +1,4 @@
-package athirahrahmat.TestCases;
+package athirahrahmat.TestScripts;
 
 import org.testng.annotations.Test;
 

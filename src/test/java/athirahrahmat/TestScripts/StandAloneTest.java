@@ -1,4 +1,4 @@
-package athirahrahmat.TestCases;
+package athirahrahmat.TestScripts;
 
 import java.time.Duration;
 import java.util.List;

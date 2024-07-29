@@ -1,28 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-<<<<<<< Updated upstream
-<suite thread-count="4" parallel="classes" name="Failed suite [FunctionalTesting]" guice-stage="DEVELOPMENT">
-  <test thread-count="4" parallel="classes" name="Functional Testing(failed)">
-    <classes>
-      <class name="athirahrahmat.TestCases.Login">
-=======
 <suite parallel="tests" name="Failed suite [Functional Test Suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" parallel="tests" name="Functional Testing(failed)">
     <classes>
       <class name="athirahrahmat.TestScripts.AddMoreThan1Product">
->>>>>>> Stashed changes
         <methods>
-          <include name="initializeBrowser"/>
           <include name="closeBrowser"/>
-<<<<<<< Updated upstream
-          <include name="navigateToURL"/>
-          <include name="login"/>
-        </methods>
-      </class> <!-- athirahrahmat.TestCases.Login -->
-    </classes>
-  </test> <!-- Functional Testing(failed) -->
-</suite> <!-- Failed suite [FunctionalTesting] -->
-=======
           <include name="selectProducts"/>
           <include name="invokeBrowser"/>
         </methods>
@@ -66,4 +49,3 @@
     </classes>
   </test> <!-- Functional Testing(failed) -->
 </suite> <!-- Failed suite [Functional Test Suite] -->
->>>>>>> Stashed changes

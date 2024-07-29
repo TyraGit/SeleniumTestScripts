@@ -3,6 +3,7 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
+<<<<<<< Updated upstream
       <class name="athirahrahmat.TestCases.LoginSuccessfully">
         <methods>
           <include name="closeBrowser"/>
@@ -11,6 +12,51 @@
           <include name="login"/>
         </methods>
       </class> <!-- athirahrahmat.TestCases.LoginSuccessfully -->
+=======
+      <class name="athirahrahmat.TestScripts.AddMoreThan1Product">
+        <methods>
+          <include name="closeBrowser"/>
+          <include name="selectProducts"/>
+          <include name="invokeBrowser"/>
+        </methods>
+      </class> <!-- athirahrahmat.TestScripts.AddMoreThan1Product -->
+      <class name="athirahrahmat.TestScripts.SubmitOrder">
+        <methods>
+          <include name="closeBrowser"/>
+          <include name="submitOrder"/>
+          <include name="invokeBrowser"/>
+          <include name="selectCountry"/>
+        </methods>
+      </class> <!-- athirahrahmat.TestScripts.SubmitOrder -->
+      <class name="athirahrahmat.TestScripts.Login">
+        <methods>
+          <include name="closeBrowser"/>
+          <include name="login"/>
+          <include name="invokeBrowser"/>
+        </methods>
+      </class> <!-- athirahrahmat.TestScripts.Login -->
+      <class name="athirahrahmat.TestScripts.ViewCart">
+        <methods>
+          <include name="closeBrowser"/>
+          <include name="verifyProdInCart"/>
+          <include name="invokeBrowser"/>
+        </methods>
+      </class> <!-- athirahrahmat.TestScripts.ViewCart -->
+      <class name="athirahrahmat.TestScripts.AddToCart">
+        <methods>
+          <include name="closeBrowser"/>
+          <include name="selectProduct"/>
+          <include name="invokeBrowser"/>
+        </methods>
+      </class> <!-- athirahrahmat.TestScripts.AddToCart -->
+      <class name="athirahrahmat.TestScripts.Checkout">
+        <methods>
+          <include name="closeBrowser"/>
+          <include name="invokeBrowser"/>
+          <include name="clickCheckout"/>
+        </methods>
+      </class> <!-- athirahrahmat.TestScripts.Checkout -->
+>>>>>>> Stashed changes
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

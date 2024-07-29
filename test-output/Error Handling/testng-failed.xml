@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite parallel="tests" name="Failed suite [Error Handling]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" parallel="tests" name="Negative Testing(failed)">
+    <classes>
+      <class name="athirahrahmat.NegativeTestScripts.InvalidCredential">
+        <methods>
+          <include name="closeBrowser"/>
+          <include name="wrongUsername"/>
+          <include name="wrongPassword"/>
+          <include name="invokeBrowser"/>
+        </methods>
+      </class> <!-- athirahrahmat.NegativeTestScripts.InvalidCredential -->
+    </classes>
+  </test> <!-- Negative Testing(failed) -->
+</suite> <!-- Failed suite [Error Handling] -->

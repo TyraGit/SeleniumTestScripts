@@ -1,4 +1,4 @@
-package athirahrahmat.TestCases;
+package athirahrahmat.TestScripts;
 
 import static org.testng.Assert.assertTrue;
 
