@@ -37,7 +37,7 @@ public class SubmitMoreProducts extends BaseTest {
 
         // Scroll the submit button into view
         JavascriptExecutor js = (JavascriptExecutor) driver;
-        js.executeScript("arguments[0].scrollIntoView(true);", submitButton);
+        js.executeScript("arguments[0].scrollIntoView({behavior: 'smooth', block: 'center'});", submitButton);
 
         // Click the submit button
         submitButton.click();

@@ -1,115 +1,49 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="6" passed="4" failed="1" skipped="1">
+<testng-results ignored="0" total="6" passed="6" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-07-30T00:46:20 MYT" name="Functional Test Suite" finished-at="2024-07-30T00:47:40 MYT" duration-ms="79848">
+  <suite started-at="2024-07-30T00:51:48 MYT" name="Functional Test Suite" finished-at="2024-07-30T00:53:00 MYT" duration-ms="71711">
     <groups>
     </groups>
-    <test started-at="2024-07-30T00:46:20 MYT" name="Sanity Testing" finished-at="2024-07-30T00:47:40 MYT" duration-ms="79848">
+    <test started-at="2024-07-30T00:51:48 MYT" name="Sanity Testing" finished-at="2024-07-30T00:53:00 MYT" duration-ms="71711">
       <class name="athirahrahmat.TestScripts.SubmitMoreProducts">
-        <test-method signature="selectCountry()[pri:0, instance:athirahrahmat.TestScripts.SubmitMoreProducts@131774fe]" started-at="2024-07-30T00:47:30 MYT" name="selectCountry" finished-at="2024-07-30T00:47:40 MYT" depends-on-methods="athirahrahmat.TestScripts.Checkout2.clickCheckout" duration-ms="10200" status="FAIL">
-          <exception class="org.openqa.selenium.TimeoutException">
-            <message>
-              <![CDATA[Expected condition failed: waiting for visibility of element located by By.cssSelector: .ta-results (tried for 10 second(s) with 500 milliseconds interval)
-Build info: version: '4.23.0', revision: '4df0a231af'
-System info: os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '14.5', java.version: '22.0.1'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 127.0.6533.73, chrome: {chromedriverVersion: 126.0.6478.63 (df799988fdc9..., userDataDir: /var/folders/bj/1skm_h4s1gb...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:60565}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:60565/devtoo..., se:cdpVersion: 127.0.6533.73, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: c3ddef25b5c93dfa792f8d0326bae835]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.cssSelector: .ta-results (tried for 10 second(s) with 500 milliseconds interval)
-Build info: version: '4.23.0', revision: '4df0a231af'
-System info: os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '14.5', java.version: '22.0.1'
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 127.0.6533.73, chrome: {chromedriverVersion: 126.0.6478.63 (df799988fdc9..., userDataDir: /var/folders/bj/1skm_h4s1gb...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:60565}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:60565/devtoo..., se:cdpVersion: 127.0.6533.73, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: c3ddef25b5c93dfa792f8d0326bae835
-at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
-at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
-at athirahrahmat.TestScripts.SubmitMoreProducts.selectCountry(SubmitMoreProducts.java:27)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
-at org.testng.TestRunner.privateRun(TestRunner.java:739)
-at org.testng.TestRunner.run(TestRunner.java:614)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:463)
-at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
-at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
-at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
-at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
-at java.base/java.lang.Thread.run(Thread.java:1570)
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.TimeoutException -->
+        <test-method signature="selectCountry()[pri:0, instance:athirahrahmat.TestScripts.SubmitMoreProducts@131774fe]" started-at="2024-07-30T00:52:59 MYT" name="selectCountry" finished-at="2024-07-30T00:52:59 MYT" depends-on-methods="athirahrahmat.TestScripts.Checkout2.clickCheckout" duration-ms="524" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- selectCountry -->
-        <test-method signature="submitOrder()[pri:0, instance:athirahrahmat.TestScripts.SubmitMoreProducts@131774fe]" started-at="2024-07-30T00:47:40 MYT" name="submitOrder" finished-at="2024-07-30T00:47:40 MYT" depends-on-methods="athirahrahmat.TestScripts.SubmitMoreProducts.selectCountry" duration-ms="0" status="SKIP">
-          <exception class="java.lang.Throwable">
-            <message>
-              <![CDATA[Method athirahrahmat.TestScripts.SubmitMoreProducts.submitOrder() on instance athirahrahmat.TestScripts.SubmitMoreProducts@131774fe depends on not successfully finished methods 
-[athirahrahmat.TestScripts.SubmitMoreProducts.selectCountry() on instance athirahrahmat.TestScripts.SubmitMoreProducts@131774fe]]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.Throwable: Method athirahrahmat.TestScripts.SubmitMoreProducts.submitOrder() on instance athirahrahmat.TestScripts.SubmitMoreProducts@131774fe depends on not successfully finished methods 
-[athirahrahmat.TestScripts.SubmitMoreProducts.selectCountry() on instance athirahrahmat.TestScripts.SubmitMoreProducts@131774fe]
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:159)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
-at org.testng.TestRunner.privateRun(TestRunner.java:739)
-at org.testng.TestRunner.run(TestRunner.java:614)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:463)
-at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
-at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
-at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
-at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
-at java.base/java.lang.Thread.run(Thread.java:1570)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.Throwable -->
+        <test-method signature="submitOrder()[pri:0, instance:athirahrahmat.TestScripts.SubmitMoreProducts@131774fe]" started-at="2024-07-30T00:52:59 MYT" name="submitOrder" finished-at="2024-07-30T00:53:00 MYT" depends-on-methods="athirahrahmat.TestScripts.SubmitMoreProducts.selectCountry" duration-ms="256" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- submitOrder -->
       </class> <!-- athirahrahmat.TestScripts.SubmitMoreProducts -->
       <class name="athirahrahmat.TestScripts.Checkout2">
-        <test-method signature="clickCheckout()[pri:0, instance:athirahrahmat.TestScripts.Checkout2@74fe5c40]" started-at="2024-07-30T00:47:19 MYT" name="clickCheckout" finished-at="2024-07-30T00:47:30 MYT" depends-on-methods="athirahrahmat.TestScripts.ViewCartIFMore1Product.verifyProdInCart" duration-ms="10186" status="PASS">
+        <test-method signature="clickCheckout()[pri:0, instance:athirahrahmat.TestScripts.Checkout2@74fe5c40]" started-at="2024-07-30T00:52:49 MYT" name="clickCheckout" finished-at="2024-07-30T00:52:59 MYT" depends-on-methods="athirahrahmat.TestScripts.ViewCartIFMore1Product.verifyProdInCart" duration-ms="10122" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- clickCheckout -->
       </class> <!-- athirahrahmat.TestScripts.Checkout2 -->
       <class name="athirahrahmat.TestScripts.ViewCartIFMore1Product">
-        <test-method signature="verifyProdInCart()[pri:0, instance:athirahrahmat.TestScripts.ViewCartIFMore1Product@436813f3]" started-at="2024-07-30T00:46:56 MYT" name="verifyProdInCart" finished-at="2024-07-30T00:47:19 MYT" depends-on-methods="athirahrahmat.TestScripts.AddMoreThan1Product.selectProducts" duration-ms="23556" status="PASS">
+        <test-method signature="verifyProdInCart()[pri:0, instance:athirahrahmat.TestScripts.ViewCartIFMore1Product@436813f3]" started-at="2024-07-30T00:52:26 MYT" name="verifyProdInCart" finished-at="2024-07-30T00:52:49 MYT" depends-on-methods="athirahrahmat.TestScripts.AddMoreThan1Product.selectProducts" duration-ms="23125" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyProdInCart -->
       </class> <!-- athirahrahmat.TestScripts.ViewCartIFMore1Product -->
       <class name="athirahrahmat.TestScripts.AddMoreThan1Product">
-        <test-method signature="selectProducts()[pri:0, instance:athirahrahmat.TestScripts.AddMoreThan1Product@8f4ea7c]" started-at="2024-07-30T00:46:21 MYT" name="selectProducts" finished-at="2024-07-30T00:46:56 MYT" depends-on-methods="athirahrahmat.TestScripts.Login.login" duration-ms="35233" status="PASS">
+        <test-method signature="selectProducts()[pri:0, instance:athirahrahmat.TestScripts.AddMoreThan1Product@8f4ea7c]" started-at="2024-07-30T00:51:51 MYT" name="selectProducts" finished-at="2024-07-30T00:52:25 MYT" depends-on-methods="athirahrahmat.TestScripts.Login.login" duration-ms="34142" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- selectProducts -->
       </class> <!-- athirahrahmat.TestScripts.AddMoreThan1Product -->
       <class name="athirahrahmat.TestScripts.Login">
-        <test-method is-config="true" signature="invokeBrowser()[pri:0, instance:athirahrahmat.TestScripts.Login@564fabc8]" started-at="2024-07-30T00:46:15 MYT" name="invokeBrowser" finished-at="2024-07-30T00:46:20 MYT" duration-ms="4810" status="PASS">
+        <test-method is-config="true" signature="invokeBrowser()[pri:0, instance:athirahrahmat.TestScripts.Login@564fabc8]" started-at="2024-07-30T00:51:46 MYT" name="invokeBrowser" finished-at="2024-07-30T00:51:48 MYT" duration-ms="1933" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- invokeBrowser -->
-        <test-method signature="login()[pri:0, instance:athirahrahmat.TestScripts.Login@564fabc8]" started-at="2024-07-30T00:46:20 MYT" name="login" finished-at="2024-07-30T00:46:21 MYT" duration-ms="612" status="PASS">
+        <test-method signature="login()[pri:0, instance:athirahrahmat.TestScripts.Login@564fabc8]" started-at="2024-07-30T00:51:48 MYT" name="login" finished-at="2024-07-30T00:51:51 MYT" duration-ms="3469" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- login -->
-        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:athirahrahmat.TestScripts.Login@564fabc8]" started-at="2024-07-30T00:47:40 MYT" name="closeBrowser" finished-at="2024-07-30T00:47:40 MYT" duration-ms="124" status="PASS">
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:athirahrahmat.TestScripts.Login@564fabc8]" started-at="2024-07-30T00:53:00 MYT" name="closeBrowser" finished-at="2024-07-30T00:53:00 MYT" duration-ms="105" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeBrowser -->

@@ -23,7 +23,7 @@ public class Checkout extends BaseTest {
 	        // Scroll to the checkout button
 	        WebElement checkoutButton = driver.findElement(By.cssSelector(".totalRow button"));
 	        JavascriptExecutor js = (JavascriptExecutor) driver;
-	        js.executeScript("arguments[0].scrollIntoView({behavior: 'smooth', block: 'center'});", checkoutButton);
+	        js.executeScript("arguments[0].scrollIntoView(true);", checkoutButton);
 	        System.out.println("Scrolled to checkout button.");
 
 	        // Wait for any overlaying elements to disappear

@@ -25,7 +25,7 @@
       <span class="top-banner-title-font">Test results</span>
       <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">1 suite, 1 failed test</span>
+      <span class="top-banner-font-1">1 suite</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -39,7 +39,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" panel-name="suite-Functional_Test_Suite" class="navigator-link">
-              <span class="suite-name border-failed">Functional Test Suite</span>
+              <span class="suite-name border-passed">Functional Test Suite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -92,35 +92,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">6 methods, 1 failed,  1 skipped,  4 passed</span>
-                  </li>
-                  <li>
-                    <span class="method-list-title failed">Failed methods</span>
-                    <span class="show-or-hide-methods failed">
-                      <a href="#" panel-name="suite-Functional_Test_Suite" class="hide-methods failed suite-Functional_Test_Suite"> (hide)</a> <!-- hide-methods failed suite-Functional_Test_Suite -->
-                      <a href="#" panel-name="suite-Functional_Test_Suite" class="show-methods failed suite-Functional_Test_Suite"> (show)</a> <!-- show-methods failed suite-Functional_Test_Suite -->
-                    </span>
-                    <div class="method-list-content failed suite-Functional_Test_Suite">
-                      <span>
-                        <img src="failed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Functional_Test_Suite" title="athirahrahmat.TestScripts.SubmitMoreProducts" class="method navigator-link" hash-for-method="selectCountry">selectCountry</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                    </div> <!-- method-list-content failed suite-Functional_Test_Suite -->
-                  </li>
-                  <li>
-                    <span class="method-list-title skipped">Skipped methods</span>
-                    <span class="show-or-hide-methods skipped">
-                      <a href="#" panel-name="suite-Functional_Test_Suite" class="hide-methods skipped suite-Functional_Test_Suite"> (hide)</a> <!-- hide-methods skipped suite-Functional_Test_Suite -->
-                      <a href="#" panel-name="suite-Functional_Test_Suite" class="show-methods skipped suite-Functional_Test_Suite"> (show)</a> <!-- show-methods skipped suite-Functional_Test_Suite -->
-                    </span>
-                    <div class="method-list-content skipped suite-Functional_Test_Suite">
-                      <span>
-                        <img src="skipped.png" width="3%"/>
-                        <a href="#" panel-name="suite-Functional_Test_Suite" title="athirahrahmat.TestScripts.SubmitMoreProducts" class="method navigator-link" hash-for-method="submitOrder">submitOrder</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                    </div> <!-- method-list-content skipped suite-Functional_Test_Suite -->
+                    <span class="method-stats">6 methods,   6 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -141,7 +113,17 @@
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Functional_Test_Suite" title="athirahrahmat.TestScripts.SubmitMoreProducts" class="method navigator-link" hash-for-method="selectCountry">selectCountry</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-Functional_Test_Suite" title="athirahrahmat.TestScripts.AddMoreThan1Product" class="method navigator-link" hash-for-method="selectProducts">selectProducts</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Functional_Test_Suite" title="athirahrahmat.TestScripts.SubmitMoreProducts" class="method navigator-link" hash-for-method="submitOrder">submitOrder</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
@@ -161,61 +143,21 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-Functional_Test_Suite" class="panel Functional_Test_Suite">
-          <div class="suite-Functional_Test_Suite-class-failed">
+          <div class="suite-Functional_Test_Suite-class-passed">
             <div class="main-panel-header rounded-window-top">
-              <img src="failed.png"/>
-              <span class="class-name">athirahrahmat.TestScripts.SubmitMoreProducts</span>
+              <img src="passed.png"/>
+              <span class="class-name">athirahrahmat.TestScripts.Checkout2</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="selectCountry">
-                  </a> <!-- selectCountry -->
-                  <span class="method-name">selectCountry</span>
-                  <div class="stack-trace">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.cssSelector: .ta-results (tried for 10 second(s) with 500 milliseconds interval)
-Build info: version: &apos;4.23.0&apos;, revision: &apos;4df0a231af&apos;
-System info: os.name: &apos;Mac OS X&apos;, os.arch: &apos;aarch64&apos;, os.version: &apos;14.5&apos;, java.version: &apos;22.0.1&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 127.0.6533.73, chrome: {chromedriverVersion: 126.0.6478.63 (df799988fdc9..., userDataDir: /var/folders/bj/1skm_h4s1gb...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:60565}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:60565/devtoo..., se:cdpVersion: 127.0.6533.73, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: c3ddef25b5c93dfa792f8d0326bae835
-	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
-	at athirahrahmat.TestScripts.SubmitMoreProducts.selectCountry(SubmitMoreProducts.java:27)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
-	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
-	at java.base/java.lang.Thread.run(Thread.java:1570)
-... Removed 15 stack frames
-</div> <!-- stack-trace -->
+                  <a name="clickCheckout">
+                  </a> <!-- clickCheckout -->
+                  <span class="method-name">clickCheckout</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Functional_Test_Suite-class-failed -->
-          <div class="suite-Functional_Test_Suite-class-skipped">
-            <div class="main-panel-header rounded-window-top">
-              <img src="skipped.png"/>
-              <span class="class-name">athirahrahmat.TestScripts.SubmitMoreProducts</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="submitOrder">
-                  </a> <!-- submitOrder -->
-                  <span class="method-name">submitOrder</span>
-                  <div class="stack-trace">java.lang.Throwable: Method athirahrahmat.TestScripts.SubmitMoreProducts.submitOrder() on instance athirahrahmat.TestScripts.SubmitMoreProducts@131774fe depends on not successfully finished methods 
-[athirahrahmat.TestScripts.SubmitMoreProducts.selectCountry() on instance athirahrahmat.TestScripts.SubmitMoreProducts@131774fe]
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
-	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
-	at java.base/java.lang.Thread.run(Thread.java:1570)
-... Removed 8 stack frames
-</div> <!-- stack-trace -->
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Functional_Test_Suite-class-skipped -->
+          </div> <!-- suite-Functional_Test_Suite-class-passed -->
           <div class="suite-Functional_Test_Suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
@@ -249,14 +191,21 @@ Session ID: c3ddef25b5c93dfa792f8d0326bae835
           <div class="suite-Functional_Test_Suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
-              <span class="class-name">athirahrahmat.TestScripts.Checkout2</span>
+              <span class="class-name">athirahrahmat.TestScripts.SubmitMoreProducts</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="clickCheckout">
-                  </a> <!-- clickCheckout -->
-                  <span class="method-name">clickCheckout</span>
+                  <a name="selectCountry">
+                  </a> <!-- selectCountry -->
+                  <span class="method-name">selectCountry</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="submitOrder">
+                  </a> <!-- submitOrder -->
+                  <span class="method-name">submitOrder</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -336,27 +285,27 @@ data.addRows(6);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'selectProducts')
 data.setCell(0, 2, 'athirahrahmat.TestScripts.AddMoreThan1Product')
-data.setCell(0, 3, 35233);
+data.setCell(0, 3, 34142);
 data.setCell(1, 0, 1)
 data.setCell(1, 1, 'verifyProdInCart')
 data.setCell(1, 2, 'athirahrahmat.TestScripts.ViewCartIFMore1Product')
-data.setCell(1, 3, 23556);
+data.setCell(1, 3, 23125);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'selectCountry')
-data.setCell(2, 2, 'athirahrahmat.TestScripts.SubmitMoreProducts')
-data.setCell(2, 3, 10200);
+data.setCell(2, 1, 'clickCheckout')
+data.setCell(2, 2, 'athirahrahmat.TestScripts.Checkout2')
+data.setCell(2, 3, 10122);
 data.setCell(3, 0, 3)
-data.setCell(3, 1, 'clickCheckout')
-data.setCell(3, 2, 'athirahrahmat.TestScripts.Checkout2')
-data.setCell(3, 3, 10186);
+data.setCell(3, 1, 'login')
+data.setCell(3, 2, 'athirahrahmat.TestScripts.Login')
+data.setCell(3, 3, 3469);
 data.setCell(4, 0, 4)
-data.setCell(4, 1, 'login')
-data.setCell(4, 2, 'athirahrahmat.TestScripts.Login')
-data.setCell(4, 3, 612);
+data.setCell(4, 1, 'selectCountry')
+data.setCell(4, 2, 'athirahrahmat.TestScripts.SubmitMoreProducts')
+data.setCell(4, 3, 524);
 data.setCell(5, 0, 5)
 data.setCell(5, 1, 'submitOrder')
 data.setCell(5, 2, 'athirahrahmat.TestScripts.SubmitMoreProducts')
-data.setCell(5, 3, 0);
+data.setCell(5, 3, 256);
 window.suiteTableData['Functional_Test_Suite']= { tableData: data, tableDiv: 'times-div-Functional_Test_Suite'}
 return data;
 }
@@ -430,44 +379,46 @@ return data;
               </div> <!-- configuration-suite before -->
               <div class="test-method">
                 <span class="method-name">login</span>
-                <span class="method-start">4839 ms</span>
+                <span class="method-start">1964 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">athirahrahmat.TestScripts.AddMoreThan1Product</div> <!-- chronological-class-name -->
               <div class="test-method">
                 <span class="method-name">selectProducts</span>
-                <span class="method-start">5455 ms</span>
+                <span class="method-start">5438 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">athirahrahmat.TestScripts.ViewCartIFMore1Product</div> <!-- chronological-class-name -->
               <div class="test-method">
                 <span class="method-name">verifyProdInCart</span>
-                <span class="method-start">40692 ms</span>
+                <span class="method-start">39601 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">athirahrahmat.TestScripts.Checkout2</div> <!-- chronological-class-name -->
               <div class="test-method">
                 <span class="method-name">clickCheckout</span>
-                <span class="method-start">64249 ms</span>
+                <span class="method-start">62742 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">athirahrahmat.TestScripts.SubmitMoreProducts</div> <!-- chronological-class-name -->
               <div class="test-method">
-                <img src="failed.png">
-                </img>
                 <span class="method-name">selectCountry</span>
-                <span class="method-start">74440 ms</span>
+                <span class="method-start">72868 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">submitOrder</span>
+                <span class="method-start">73393 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">athirahrahmat.TestScripts.Login</div> <!-- chronological-class-name -->
               <div class="configuration-suite after">
                 <span class="method-name">closeBrowser</span>
-                <span class="method-start">84706 ms</span>
+                <span class="method-start">73684 ms</span>
               </div> <!-- configuration-suite after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

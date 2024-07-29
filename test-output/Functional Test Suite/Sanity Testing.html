@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Sanity Testing</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>4/1/1</td>
+<td>Tests passed/Failed/Skipped:</td><td>6/0/0</td>
 </tr><tr>
-<td>Started on:</td><td>Tue Jul 30 00:46:20 MYT 2024</td>
+<td>Started on:</td><td>Tue Jul 30 00:51:48 MYT 2024</td>
 </tr>
-<tr><td>Total time:</td><td>79 seconds (79848 ms)</td>
+<tr><td>Total time:</td><td>71 seconds (71711 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -67,64 +67,6 @@ function toggleAllBoxes() {
 </tr>
 </table><p/>
 <small><i>(Hover the method name to see the test class name)</i></small><p/>
-<table width='100%' border='1' class='invocation-failed'>
-<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
-<tr><td><b>Test method</b></td>
-<td><b>Attribute(s)</b></td>
-<td width="30%"><b>Exception</b></td>
-<td width="10%"><b>Time (seconds)</b></td>
-<td><b>Instance</b></td>
-</tr>
-<tr>
-<td title='athirahrahmat.TestScripts.SubmitMoreProducts.selectCountry()'><b>selectCountry</b><br>Test class: athirahrahmat.TestScripts.SubmitMoreProducts</td>
-<td><div><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.cssSelector: .ta-results (tried for 10 second(s) with 500 milliseconds interval)
-Build info: version: &apos;4.23.0&apos;, revision: &apos;4df0a231af&apos;
-System info: os.name: &apos;Mac OS X&apos;, os.arch: &apos;aarch64&apos;, os.version: &apos;14.5&apos;, java.version: &apos;22.0.1&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 127.0.6533.73, chrome: {chromedriverVersion: 126.0.6478.63 (df799988fdc9..., userDataDir: /var/folders/bj/1skm_h4s1gb...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:60565}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:60565/devtoo..., se:cdpVersion: 127.0.6533.73, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: c3ddef25b5c93dfa792f8d0326bae835
-	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
-	at athirahrahmat.TestScripts.SubmitMoreProducts.selectCountry(SubmitMoreProducts.java:27)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
-	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
-	at java.base/java.lang.Thread.run(Thread.java:1570)
-... Removed 15 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1037999176", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1037999176'><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.cssSelector: .ta-results (tried for 10 second(s) with 500 milliseconds interval)
-Build info: version: &apos;4.23.0&apos;, revision: &apos;4df0a231af&apos;
-System info: os.name: &apos;Mac OS X&apos;, os.arch: &apos;aarch64&apos;, os.version: &apos;14.5&apos;, java.version: &apos;22.0.1&apos;
-Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 127.0.6533.73, chrome: {chromedriverVersion: 126.0.6478.63 (df799988fdc9..., userDataDir: /var/folders/bj/1skm_h4s1gb...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:60565}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:60565/devtoo..., se:cdpVersion: 127.0.6533.73, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: c3ddef25b5c93dfa792f8d0326bae835
-	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
-	at athirahrahmat.TestScripts.SubmitMoreProducts.selectCountry(SubmitMoreProducts.java:27)
-	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
-	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
-	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
-	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
-	at org.testng.TestRunner.privateRun(TestRunner.java:739)
-	at org.testng.TestRunner.run(TestRunner.java:614)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:463)
-	at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
-	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
-	at java.base/java.lang.Thread.run(Thread.java:1570)
-</pre></div></td>
-<td>10</td>
-<td>athirahrahmat.TestScripts.SubmitMoreProducts@131774fe</td></tr>
-</table><p>
 <table width='100%' border='1' class='invocation-passed'>
 <tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
 <tr><td><b>Test method</b></td>
@@ -136,60 +78,33 @@ Session ID: c3ddef25b5c93dfa792f8d0326bae835
 <tr>
 <td title='athirahrahmat.TestScripts.Login.login()'><b>login</b><br>Test class: athirahrahmat.TestScripts.Login</td>
 <td></td>
-<td>0</td>
+<td>3</td>
 <td>athirahrahmat.TestScripts.Login@564fabc8</td></tr>
 <tr>
-<td title='athirahrahmat.TestScripts.Checkout2.clickCheckout()'><b>clickCheckout</b><br>Test class: athirahrahmat.TestScripts.Checkout2</td>
+<td title='athirahrahmat.TestScripts.SubmitMoreProducts.submitOrder()'><b>submitOrder</b><br>Test class: athirahrahmat.TestScripts.SubmitMoreProducts</td>
 <td></td>
-<td>10</td>
-<td>athirahrahmat.TestScripts.Checkout2@74fe5c40</td></tr>
+<td>0</td>
+<td>athirahrahmat.TestScripts.SubmitMoreProducts@131774fe</td></tr>
 <tr>
 <td title='athirahrahmat.TestScripts.AddMoreThan1Product.selectProducts()'><b>selectProducts</b><br>Test class: athirahrahmat.TestScripts.AddMoreThan1Product</td>
 <td></td>
-<td>35</td>
+<td>34</td>
 <td>athirahrahmat.TestScripts.AddMoreThan1Product@8f4ea7c</td></tr>
 <tr>
 <td title='athirahrahmat.TestScripts.ViewCartIFMore1Product.verifyProdInCart()'><b>verifyProdInCart</b><br>Test class: athirahrahmat.TestScripts.ViewCartIFMore1Product</td>
 <td></td>
 <td>23</td>
 <td>athirahrahmat.TestScripts.ViewCartIFMore1Product@436813f3</td></tr>
-</table><p>
-<table width='100%' border='1' class='invocation-skipped'>
-<tr><td colspan='4' align='center'><b>SKIPPED TESTS</b></td></tr>
-<tr><td><b>Test method</b></td>
-<td><b>Attribute(s)</b></td>
-<td width="30%"><b>Exception</b></td>
-<td width="10%"><b>Time (seconds)</b></td>
-<td><b>Instance</b></td>
-</tr>
 <tr>
-<td title='athirahrahmat.TestScripts.SubmitMoreProducts.submitOrder()'><b>submitOrder</b><br>Test class: athirahrahmat.TestScripts.SubmitMoreProducts</td>
-<td><div><pre>java.lang.Throwable: Method athirahrahmat.TestScripts.SubmitMoreProducts.submitOrder() on instance athirahrahmat.TestScripts.SubmitMoreProducts@131774fe depends on not successfully finished methods 
-[athirahrahmat.TestScripts.SubmitMoreProducts.selectCountry() on instance athirahrahmat.TestScripts.SubmitMoreProducts@131774fe]
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
-	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
-	at java.base/java.lang.Thread.run(Thread.java:1570)
-... Removed 8 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace151880207", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace151880207'><pre>java.lang.Throwable: Method athirahrahmat.TestScripts.SubmitMoreProducts.submitOrder() on instance athirahrahmat.TestScripts.SubmitMoreProducts@131774fe depends on not successfully finished methods 
-[athirahrahmat.TestScripts.SubmitMoreProducts.selectCountry() on instance athirahrahmat.TestScripts.SubmitMoreProducts@131774fe]
-	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:159)
-	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
-	at org.testng.TestRunner.privateRun(TestRunner.java:739)
-	at org.testng.TestRunner.run(TestRunner.java:614)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:463)
-	at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
-	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)
-	at java.base/java.lang.Thread.run(Thread.java:1570)
-</pre></div></td>
+<td title='athirahrahmat.TestScripts.SubmitMoreProducts.selectCountry()'><b>selectCountry</b><br>Test class: athirahrahmat.TestScripts.SubmitMoreProducts</td>
+<td></td>
 <td>0</td>
 <td>athirahrahmat.TestScripts.SubmitMoreProducts@131774fe</td></tr>
+<tr>
+<td title='athirahrahmat.TestScripts.Checkout2.clickCheckout()'><b>clickCheckout</b><br>Test class: athirahrahmat.TestScripts.Checkout2</td>
+<td></td>
+<td>10</td>
+<td>athirahrahmat.TestScripts.Checkout2@74fe5c40</td></tr>
 </table><p>
 </body>
 </html>
