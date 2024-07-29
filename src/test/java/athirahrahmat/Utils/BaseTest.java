@@ -1,29 +1,36 @@
 package athirahrahmat.Utils;
 
+import java.time.Duration;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebDriver.Timeouts;
 import org.testng.annotations.AfterSuite;
+import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.BeforeSuite;
 
 import athirahrahmat.Utils.RSAWebDrivers.BrowserType;
 
-public class BaseTest {
-	//drivers are static so they can be shared across all instances of the test classes.
-    public static RSAWebDrivers rsaWebDrivers;
-    public static WebDriver driver;
+public abstract class BaseTest {
+    public RSAWebDrivers rsaWebDrivers;
+    public WebDriver driver;
     public String url = "https://rahulshettyacademy.com/client";
 
     @BeforeSuite
-    public void invokeBrowser() {
+    public void initializeBrowser() {
         rsaWebDrivers = new RSAWebDrivers(BrowserType.CHROME);
         driver = rsaWebDrivers.getDriver();
         driver.manage().window().maximize();
-        
-        System.out.println("Browser opened.");
-        
-        System.out.println("Navigating to URL: " + url);
-        driver.get(url);
+        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
+        System.out.println("Browser initialized.");
     }
     
+    @BeforeMethod
+    public void navigateToURL() {
+    	System.out.println("Navigating to URL: " + url);
+        driver.get(url);
+        System.out.println("Navigation completed.");
+    }
+    
+
     @AfterSuite
     public void closeBrowser() {
     	System.out.println("Closing browser...");
