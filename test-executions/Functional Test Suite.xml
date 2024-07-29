@@ -5,7 +5,6 @@
         <classes>
             <class name="athirahrahmat.TestScripts.Login"/>
             <class name="athirahrahmat.TestScripts.AddToCart"/>
-            <class name="athirahrahmat.TestScripts.AddMoreThan1Product"/>
             <class name="athirahrahmat.TestScripts.ViewCart"/>
             <class name="athirahrahmat.TestScripts.Checkout"/>
             <class name="athirahrahmat.TestScripts.SubmitOrder"/>

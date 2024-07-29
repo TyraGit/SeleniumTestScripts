@@ -16,20 +16,17 @@ public class AddToCart extends BaseTest {
 	
     @Test(dependsOnMethods = {"athirahrahmat.TestScripts.Login.login"})
     public void selectProduct() {
-        WebDriverWait buffer = new WebDriverWait(driver, Duration.ofSeconds(15));
+        WebDriverWait buffer = new WebDriverWait(driver, Duration.ofSeconds(5));
         try {
             buffer.until(ExpectedConditions.visibilityOfElementLocated(By.cssSelector(".mb-3")));
             System.out.println("Products are visible on the page.");
 
-            // Go through a list of elements and filter the product
+            // Go through a list of elements and filter the product by "ADIDAS ORIGINAL"
             List<WebElement> products = driver.findElements(By.cssSelector(".mb-3"));
             WebElement prod = products.stream().filter(product -> product.findElement(By.cssSelector("b")).getText().equals("ZARA COAT 3")).findFirst().orElse(null);
 
             if (prod != null) {
-            	buffer.until(ExpectedConditions.invisibilityOfElementLocated(By.cssSelector(".ngx-spinner-overlay")));
-                prod.findElement(By.cssSelector(".btn.w-10.rounded:last-of-type")).click();
-                System.out.println("Added 'ZARA COAT 3' to the cart.");
-                
+                prod.findElement(By.cssSelector(".card-body button:last-of-type")).click();
             } else {
                 System.out.println("Product 'ZARA COAT 3' not found.");
             }
