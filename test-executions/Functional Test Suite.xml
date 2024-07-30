@@ -8,6 +8,7 @@
             <class name="athirahrahmat.TestScripts.ViewCart"/>
             <class name="athirahrahmat.TestScripts.Checkout"/>
             <class name="athirahrahmat.TestScripts.SubmitOrder"/>
+            <class name="athirahrahmat.TestScripts.DownloadInvoice"/>
         </classes>
     </test>
 </suite>

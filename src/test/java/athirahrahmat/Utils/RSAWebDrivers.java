@@ -2,6 +2,7 @@ package athirahrahmat.Utils;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.edge.EdgeDriver;
 
@@ -17,12 +18,12 @@ public class RSAWebDrivers {
     }
 
     // Constructor to initialize WebDriver based on the browser type
-    public RSAWebDrivers(BrowserType browserType) {
+    public RSAWebDrivers(BrowserType browserType, ChromeOptions options) {
         // Set the path to the WebDriver executable based on the browser type
         switch (browserType) {
             case CHROME:
                 System.setProperty("webdriver.chrome.driver", "/Users/athirah/chromedriver");
-                this.driver = new ChromeDriver();
+                this.driver = new ChromeDriver(options);
                 break;
                 
             case FIREFOX:

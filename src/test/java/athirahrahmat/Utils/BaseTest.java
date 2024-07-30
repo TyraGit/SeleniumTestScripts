@@ -1,8 +1,12 @@
 package athirahrahmat.Utils;
 
 import java.time.Duration;
+import java.nio.file.Paths;
+import java.util.HashMap;
+import java.util.Map;
 
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 import org.testng.annotations.AfterSuite;
 import org.testng.annotations.BeforeSuite;
 
@@ -16,7 +20,16 @@ public class BaseTest {
     @BeforeSuite
     public void invokeBrowser() {
         if (driver == null) {
-            rsaWebDrivers = new RSAWebDrivers(BrowserType.CHROME);
+            // Configure download directory
+            String downloadFilePath = Paths.get(System.getProperty("user.dir"), "downloads").toString();
+            Map<String, Object> prefs = new HashMap<String, Object>();
+            prefs.put("download.default_directory", downloadFilePath);
+            prefs.put("profile.default_content_settings.popups", 0);
+            
+            ChromeOptions options = new ChromeOptions();
+            options.setExperimentalOption("prefs", prefs);
+            
+            rsaWebDrivers = new RSAWebDrivers(BrowserType.CHROME, options);
             driver = rsaWebDrivers.getDriver();
             driver.manage().window().maximize();
             

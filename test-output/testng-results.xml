@@ -1,31 +1,59 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
+<testng-results ignored="0" total="7" passed="7" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-07-30T01:33:15 MYT" name="Default suite" finished-at="2024-07-30T01:33:32 MYT" duration-ms="17231">
+  <suite started-at="2024-07-30T13:50:25 MYT" name="Default suite" finished-at="2024-07-30T13:50:56 MYT" duration-ms="31152">
     <groups>
     </groups>
-    <test started-at="2024-07-30T01:33:15 MYT" name="Default test" finished-at="2024-07-30T01:33:32 MYT" duration-ms="17231">
-      <class name="athirahrahmat.TestScripts.Login">
-        <test-method is-config="true" signature="invokeBrowser()[pri:0, instance:athirahrahmat.TestScripts.Login@222545dc]" started-at="2024-07-30T01:33:12 MYT" name="invokeBrowser" finished-at="2024-07-30T01:33:15 MYT" duration-ms="2596" status="PASS">
+    <test started-at="2024-07-30T13:50:25 MYT" name="Default test" finished-at="2024-07-30T13:50:56 MYT" duration-ms="31152">
+      <class name="athirahrahmat.TestScripts.SubmitOrder">
+        <test-method is-config="true" signature="invokeBrowser()[pri:0, instance:athirahrahmat.TestScripts.SubmitOrder@36902638]" started-at="2024-07-30T13:50:23 MYT" name="invokeBrowser" finished-at="2024-07-30T13:50:25 MYT" duration-ms="1687" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- invokeBrowser -->
-        <test-method signature="login()[pri:0, instance:athirahrahmat.TestScripts.Login@222545dc]" started-at="2024-07-30T01:33:15 MYT" name="login" finished-at="2024-07-30T01:33:15 MYT" duration-ms="416" status="PASS">
+        <test-method signature="selectCountry()[pri:0, instance:athirahrahmat.TestScripts.SubmitOrder@36902638]" started-at="2024-07-30T13:50:50 MYT" name="selectCountry" finished-at="2024-07-30T13:50:51 MYT" depends-on-methods="athirahrahmat.TestScripts.Checkout.clickCheckout" duration-ms="528" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- login -->
-        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:athirahrahmat.TestScripts.Login@222545dc]" started-at="2024-07-30T01:33:32 MYT" name="closeBrowser" finished-at="2024-07-30T01:33:32 MYT" duration-ms="92" status="PASS">
+        </test-method> <!-- selectCountry -->
+        <test-method signature="submitOrder()[pri:0, instance:athirahrahmat.TestScripts.SubmitOrder@36902638]" started-at="2024-07-30T13:50:51 MYT" name="submitOrder" finished-at="2024-07-30T13:50:51 MYT" depends-on-methods="athirahrahmat.TestScripts.SubmitOrder.selectCountry" duration-ms="182" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- submitOrder -->
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:athirahrahmat.TestScripts.SubmitOrder@36902638]" started-at="2024-07-30T13:50:56 MYT" name="closeBrowser" finished-at="2024-07-30T13:50:56 MYT" duration-ms="115" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeBrowser -->
-      </class> <!-- athirahrahmat.TestScripts.Login -->
-      <class name="athirahrahmat.TestScripts.ViewPastOrders">
-        <test-method signature="clickOrdersTab()[pri:0, instance:athirahrahmat.TestScripts.ViewPastOrders@2d7275fc]" started-at="2024-07-30T01:33:15 MYT" name="clickOrdersTab" finished-at="2024-07-30T01:33:32 MYT" depends-on-methods="athirahrahmat.TestScripts.Login.login" duration-ms="16795" status="PASS">
+      </class> <!-- athirahrahmat.TestScripts.SubmitOrder -->
+      <class name="athirahrahmat.TestScripts.Checkout">
+        <test-method signature="clickCheckout()[pri:0, instance:athirahrahmat.TestScripts.Checkout@10e31a9a]" started-at="2024-07-30T13:50:40 MYT" name="clickCheckout" finished-at="2024-07-30T13:50:50 MYT" depends-on-methods="athirahrahmat.TestScripts.ViewCart.verifyProdInCart" duration-ms="10120" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- clickOrdersTab -->
-      </class> <!-- athirahrahmat.TestScripts.ViewPastOrders -->
+        </test-method> <!-- clickCheckout -->
+      </class> <!-- athirahrahmat.TestScripts.Checkout -->
+      <class name="athirahrahmat.TestScripts.DownloadInvoice">
+        <test-method signature="DownloadCSV()[pri:0, instance:athirahrahmat.TestScripts.DownloadInvoice@131774fe]" started-at="2024-07-30T13:50:51 MYT" name="DownloadCSV" finished-at="2024-07-30T13:50:56 MYT" depends-on-methods="athirahrahmat.TestScripts.SubmitOrder.submitOrder" duration-ms="5071" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- DownloadCSV -->
+      </class> <!-- athirahrahmat.TestScripts.DownloadInvoice -->
+      <class name="athirahrahmat.TestScripts.Login">
+        <test-method signature="login()[pri:0, instance:athirahrahmat.TestScripts.Login@158d2680]" started-at="2024-07-30T13:50:25 MYT" name="login" finished-at="2024-07-30T13:50:27 MYT" duration-ms="2158" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- login -->
+      </class> <!-- athirahrahmat.TestScripts.Login -->
+      <class name="athirahrahmat.TestScripts.ViewCart">
+        <test-method signature="verifyProdInCart()[pri:0, instance:athirahrahmat.TestScripts.ViewCart@77847718]" started-at="2024-07-30T13:50:27 MYT" name="verifyProdInCart" finished-at="2024-07-30T13:50:40 MYT" depends-on-methods="athirahrahmat.TestScripts.AddToCart.selectProduct" duration-ms="12922" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyProdInCart -->
+      </class> <!-- athirahrahmat.TestScripts.ViewCart -->
+      <class name="athirahrahmat.TestScripts.AddToCart">
+        <test-method signature="selectProduct()[pri:0, instance:athirahrahmat.TestScripts.AddToCart@7f3b84b8]" started-at="2024-07-30T13:50:27 MYT" name="selectProduct" finished-at="2024-07-30T13:50:27 MYT" depends-on-methods="athirahrahmat.TestScripts.Login.login" duration-ms="129" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- selectProduct -->
+      </class> <!-- athirahrahmat.TestScripts.AddToCart -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
