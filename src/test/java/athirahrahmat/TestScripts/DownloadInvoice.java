@@ -26,7 +26,7 @@ public class DownloadInvoice extends BaseTest {
         WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
         
         // Find all buttons with the same selector
-        List<WebElement> buttons = wait.until(ExpectedConditions.visibilityOfAllElementsLocatedBy(By.cssSelector(".mt-3:first-of-type")));
+        List<WebElement> buttons = wait.until(ExpectedConditions.visibilityOfAllElementsLocatedBy(By.cssSelector(".mt-3:nth-child(1)")));
         
         // Iterate through the list and click the button with the specific label
         for (WebElement button : buttons) {

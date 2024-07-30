@@ -21,7 +21,7 @@ public class AddToCart extends BaseTest {
             buffer.until(ExpectedConditions.visibilityOfElementLocated(By.cssSelector(".mb-3")));
             System.out.println("Products are visible on the page.");
 
-            // Go through a list of elements and filter the product by "ADIDAS ORIGINAL"
+            // Go through a list of elements and filter the product by "ZARA COAT 3"
             List<WebElement> products = driver.findElements(By.cssSelector(".mb-3"));
             WebElement prod = products.stream().filter(product -> product.findElement(By.cssSelector("b")).getText().equals("ZARA COAT 3")).findFirst().orElse(null);
 

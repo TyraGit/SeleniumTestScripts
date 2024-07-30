@@ -5,6 +5,7 @@
         <classes>
             <class name="athirahrahmat.TestScripts.Login"/>
             <class name="athirahrahmat.TestScripts.ViewPastOrders"/>
+            <class name="athirahrahmat.TestScripts.ViewProdDesc"/>
         </classes>
     </test>
 </suite>
