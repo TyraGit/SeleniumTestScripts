@@ -36,6 +36,7 @@ public class DownloadInvoice extends BaseTest {
                 js.executeScript("arguments[0].scrollIntoView({behavior: 'smooth', block: 'center'});", button);
                 
                 button.click();
+                System.out.println("Download is successful");
                 break; // Exit the loop after clicking the correct button
             }
         }

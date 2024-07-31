@@ -1,9 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="Error Handling" parallel="tests" thread-count="5">
+<suite name="Error Handling" thread-count="5">
+	<listeners>
+        <listener class-name="athirahrahmat.Utils.CustomListener"/>
+    </listeners>
     <test name="Negative Testing">
         <classes>
-        <class name="athirahrahmat.NegativeTestScripts.InvalidCredential" />
+            <class name="athirahrahmat.TestScripts.Login"/>
+            <class name="athirahrahmat.NegativeTestScripts.NoProdFound"/>
+            <class name="athirahrahmat.TestScripts.Logout"/>
+            <class name="athirahrahmat.NegativeTestScripts.InvalidCredential"/>
         </classes>
     </test>
 </suite>

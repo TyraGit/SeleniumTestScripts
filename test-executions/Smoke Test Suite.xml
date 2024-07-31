@@ -1,11 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="Smoke Test Suite" parallel="tests" thread-count="5">
+	<listeners>
+        <listener class-name="athirahrahmat.Utils.CustomListener"/>
+    </listeners>
     <test name="Smoke Testing">
         <classes>
             <class name="athirahrahmat.TestScripts.Login"/>
-            <class name="athirahrahmat.TestScripts.ViewPastOrders"/>
+            <class name="athirahrahmat.TestScripts.FilterBySearchbox"/>
             <class name="athirahrahmat.TestScripts.ViewProdDesc"/>
+            <class name="athirahrahmat.TestScripts.ViewPastOrders"/>
+            <class name="athirahrahmat.TestScripts.Logout"/>
         </classes>
     </test>
 </suite>

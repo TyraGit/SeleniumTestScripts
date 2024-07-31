@@ -7,6 +7,7 @@
         <methods>
           <include name="closeBrowser"/>
           <include name="wrongUsername"/>
+          <include name="setUp"/>
           <include name="wrongPassword"/>
           <include name="invokeBrowser"/>
         </methods>

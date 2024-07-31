@@ -1,8 +1,6 @@
 package athirahrahmat.TestScripts;
-
-import static org.testng.Assert.assertTrue;
-
 import org.openqa.selenium.By;
+import org.testng.Assert;
 import org.testng.annotations.Test;
 
 import athirahrahmat.Utils.BaseTest;
@@ -21,8 +19,8 @@ public class Login extends BaseTest {
         driver.findElement(By.id("login")).click();
         
         boolean loginSuccess = driver.findElement(By.className("fa-sign-out")).isDisplayed();
-        assertTrue(loginSuccess, "Login should be successful.");
+        Assert.assertTrue(loginSuccess, "Login should be successful.");
         
-        System.out.println("Login attempt completed and verified.");
+        System.out.println("Login is successful");
     }
 }

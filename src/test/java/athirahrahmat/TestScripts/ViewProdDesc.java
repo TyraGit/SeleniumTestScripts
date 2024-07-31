@@ -15,7 +15,7 @@ public class ViewProdDesc extends BaseTest {
 
     @Test(dependsOnMethods = {"athirahrahmat.TestScripts.Login.login"})
     public void viewProduct() {
-        String productName = "IPHONE 13 PRO";
+        String productName = "ZARA COAT 3";
         WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
         HomePage homePage = new HomePage(driver);
 
@@ -24,10 +24,19 @@ public class ViewProdDesc extends BaseTest {
             homePage.goToHomePage();
 
             // Wait for the Home page to load
-            wait.until(ExpectedConditions.visibilityOfElementLocated(By.cssSelector(".card-body")));
+            wait.until(ExpectedConditions.visibilityOfElementLocated(By.cssSelector(".container")));
 
             // Locate and view the product
-            boolean productFound = homePage.viewProductByName(productName);
+            List<WebElement> products = driver.findElements(By.cssSelector(".card-body"));
+            boolean productFound = false;
+            for (WebElement product : products) {
+                WebElement productNameElement = product.findElement(By.cssSelector("h5"));
+                if (productNameElement.getText().equalsIgnoreCase(productName)) {
+                    product.findElement(By.cssSelector("button:first-of-type")).click();
+                    productFound = true;
+                    break; // Exit the loop once the product is found and clicked
+                }
+            }
 
             if (!productFound) {
                 System.out.println("Product " + productName + " not found on the home page.");
@@ -35,7 +44,7 @@ public class ViewProdDesc extends BaseTest {
             }
 
             // Wait for the product view page to load and the items to be visible
-            wait.until(ExpectedConditions.visibilityOfElementLocated(By.cssSelector(".ng-star-inserted")));
+            wait.until(ExpectedConditions.visibilityOfElementLocated(By.cssSelector(".container.mt-5")));
             List<WebElement> prodDesc = driver.findElements(By.cssSelector(".col-lg-6.rtl-text"));
 
             // Validate that the product name is found in the product description page

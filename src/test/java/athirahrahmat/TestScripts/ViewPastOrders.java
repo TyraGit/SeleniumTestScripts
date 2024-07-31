@@ -19,23 +19,21 @@ public class ViewPastOrders extends BaseTest {
         try {
             // Navigate to Home page if not already there
             homePage.goToHomePage();
-
-			//wait.until(ExpectedConditions.visibilityOfElementLocated(By.cssSelector("#toast-container"))); // Waiting for toaster to appear
-			//wait.until(ExpectedConditions.invisibilityOfElementLocated(By.cssSelector(".ng-animating"))); // Waiting for the loader to disappear
-
+            
             // Wait for the Home page to load
-            wait.until(ExpectedConditions.visibilityOfElementLocated(By.cssSelector(".card-body")));
+            wait.until(ExpectedConditions.visibilityOfElementLocated(By.cssSelector(".container")));
             
 			// Open Orders page
 			driver.findElement(By.cssSelector(".btn.btn-custom[routerlink='/dashboard/myorders']")).click();
 			
 			// Wait for the Orders page to load
-            //wait.until(ExpectedConditions.visibilityOfElementLocated(By.cssSelector(".ng-star-inserted")));
+            wait.until(ExpectedConditions.visibilityOfElementLocated(By.cssSelector(".ng-star-inserted")));
 
 			// Take a screenshot with a custom filename
             screenshots.takeScreenshot("ViewPastOrders_");
 
-		} catch (Exception e) {
+		} 
+        catch (Exception e) {
 			e.printStackTrace();
 			System.out.println("An error occurred: " + e.getMessage());
 		}

@@ -3,6 +3,7 @@ package athirahrahmat.NegativeTestScripts;
 import java.time.Duration;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.annotations.Test;
@@ -24,9 +25,12 @@ public class InvalidCredential extends BaseTest {
         
         // Add explicit wait for the error message to be displayed
         WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
-        boolean errorMessage = wait.until(ExpectedConditions.visibilityOfElementLocated(By.cssSelector(".toast-container"))).isDisplayed();
+        WebElement errorToaster = wait.until(ExpectedConditions.visibilityOfElementLocated(By.cssSelector(".toast-error")));
+        String errorMessage = errorToaster.getText();
+        System.out.println("Toaster message: " + errorMessage);
         
-        System.out.println(errorMessage);
+        driver.findElement(By.id("userEmail")).clear();
+        driver.findElement(By.id("userPassword")).clear();
     }
 
     @Test
@@ -41,8 +45,11 @@ public class InvalidCredential extends BaseTest {
         
         // Add explicit wait for the error message to be displayed
         WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
-        boolean errorMessage = wait.until(ExpectedConditions.visibilityOfElementLocated(By.cssSelector(".toast-container"))).isDisplayed();
+        WebElement errorToaster = wait.until(ExpectedConditions.visibilityOfElementLocated(By.cssSelector(".toast-error")));
+        String errorMessage = errorToaster.getText();
+        System.out.println("Toaster message: " + errorMessage);
         
-        System.out.println(errorMessage);
+        driver.findElement(By.id("userEmail")).clear();
+        driver.findElement(By.id("userPassword")).clear();
     }
 }

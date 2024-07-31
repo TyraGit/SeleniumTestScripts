@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite parallel="tests" name="Failed suite [Smoke Test Suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" parallel="tests" name="Smoke Testing(failed)">
+    <classes>
+      <class name="athirahrahmat.TestScripts.FilterProducts">
+        <methods>
+          <include name="closeBrowser"/>
+          <include name="filterBySearchbox"/>
+          <include name="setUp"/>
+          <include name="invokeBrowser"/>
+        </methods>
+      </class> <!-- athirahrahmat.TestScripts.FilterProducts -->
+      <class name="athirahrahmat.TestScripts.Login">
+        <methods>
+          <include name="closeBrowser"/>
+          <include name="login"/>
+          <include name="setUp"/>
+          <include name="invokeBrowser"/>
+        </methods>
+      </class> <!-- athirahrahmat.TestScripts.Login -->
+    </classes>
+  </test> <!-- Smoke Testing(failed) -->
+</suite> <!-- Failed suite [Smoke Test Suite] -->

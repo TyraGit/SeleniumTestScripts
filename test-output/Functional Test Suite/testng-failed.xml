@@ -3,37 +3,42 @@
 <suite parallel="tests" name="Failed suite [Functional Test Suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" parallel="tests" name="Functional Testing(failed)">
     <classes>
-      <class name="athirahrahmat.TestScripts.DownloadInvoice">
-        <methods>
-          <include name="closeBrowser"/>
-          <include name="DownloadCSV"/>
-          <include name="invokeBrowser"/>
-        </methods>
-      </class> <!-- athirahrahmat.TestScripts.DownloadInvoice -->
       <class name="athirahrahmat.TestScripts.Checkout">
         <methods>
           <include name="closeBrowser"/>
+          <include name="setUp"/>
           <include name="invokeBrowser"/>
           <include name="clickCheckout"/>
         </methods>
       </class> <!-- athirahrahmat.TestScripts.Checkout -->
-      <class name="athirahrahmat.TestScripts.ViewCart">
-        <methods>
-          <include name="closeBrowser"/>
-          <include name="verifyProdInCart"/>
-          <include name="invokeBrowser"/>
-        </methods>
-      </class> <!-- athirahrahmat.TestScripts.ViewCart -->
       <class name="athirahrahmat.TestScripts.AddToCart">
         <methods>
           <include name="closeBrowser"/>
           <include name="selectProduct"/>
+          <include name="setUp"/>
           <include name="invokeBrowser"/>
         </methods>
       </class> <!-- athirahrahmat.TestScripts.AddToCart -->
+      <class name="athirahrahmat.TestScripts.ViewCart">
+        <methods>
+          <include name="closeBrowser"/>
+          <include name="verifyProdInCart"/>
+          <include name="setUp"/>
+          <include name="invokeBrowser"/>
+        </methods>
+      </class> <!-- athirahrahmat.TestScripts.ViewCart -->
+      <class name="athirahrahmat.TestScripts.DownloadInvoice">
+        <methods>
+          <include name="closeBrowser"/>
+          <include name="DownloadCSV"/>
+          <include name="setUp"/>
+          <include name="invokeBrowser"/>
+        </methods>
+      </class> <!-- athirahrahmat.TestScripts.DownloadInvoice -->
       <class name="athirahrahmat.TestScripts.SubmitOrder">
         <methods>
           <include name="closeBrowser"/>
+          <include name="setUp"/>
           <include name="submitOrder"/>
           <include name="invokeBrowser"/>
           <include name="selectCountry"/>
@@ -43,9 +48,18 @@
         <methods>
           <include name="closeBrowser"/>
           <include name="login"/>
+          <include name="setUp"/>
           <include name="invokeBrowser"/>
         </methods>
       </class> <!-- athirahrahmat.TestScripts.Login -->
+      <class name="athirahrahmat.TestScripts.Logout">
+        <methods>
+          <include name="closeBrowser"/>
+          <include name="signout"/>
+          <include name="setUp"/>
+          <include name="invokeBrowser"/>
+        </methods>
+      </class> <!-- athirahrahmat.TestScripts.Logout -->
     </classes>
   </test> <!-- Functional Testing(failed) -->
 </suite> <!-- Failed suite [Functional Test Suite] -->
