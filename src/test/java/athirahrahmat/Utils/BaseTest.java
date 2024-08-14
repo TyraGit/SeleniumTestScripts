@@ -11,8 +11,6 @@ import org.testng.annotations.AfterSuite;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeSuite;
 
-import athirahrahmat.Utils.RSAWebDrivers.BrowserType;
-
 public class BaseTest {
     public static RSAWebDrivers rsaWebDrivers;
     public static WebDriver driver;
@@ -22,16 +20,21 @@ public class BaseTest {
     @BeforeSuite
     public void invokeBrowser() {
         if (driver == null) {
-            // Configure download directory
-            String downloadFilePath = Paths.get(System.getProperty("user.dir"), "downloads").toString();
-            Map<String, Object> prefs = new HashMap<String, Object>();
-            prefs.put("download.default_directory", downloadFilePath);
-            prefs.put("profile.default_content_settings.popups", 0);
+            ChromeOptions options = null;
+            String browser = System.getProperty("browser", "CHROME").toUpperCase();
 
-            ChromeOptions options = new ChromeOptions();
-            options.setExperimentalOption("prefs", prefs);
+            if (browser.equals("CHROME")) {
+                // Configure download directory for Chrome
+                String downloadFilePath = Paths.get(System.getProperty("user.dir"), "downloads").toString();
+                Map<String, Object> prefs = new HashMap<>();
+                prefs.put("download.default_directory", downloadFilePath);
+                prefs.put("profile.default_content_settings.popups", 0);
 
-            rsaWebDrivers = new RSAWebDrivers(BrowserType.CHROME, options);
+                options = new ChromeOptions();
+                options.setExperimentalOption("prefs", prefs);
+            }
+
+            rsaWebDrivers = new RSAWebDrivers(options);
             driver = rsaWebDrivers.getDriver();
             driver.manage().window().maximize();
 
