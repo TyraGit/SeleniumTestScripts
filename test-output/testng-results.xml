@@ -1,69 +1,113 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="5" passed="5" failed="0" skipped="0">
+<testng-results ignored="0" total="10" passed="10" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-08-14T17:14:54 MYT" name="Smoke Test Suite" finished-at="2024-08-14T17:15:15 MYT" duration-ms="21812">
+  <suite started-at="2024-08-14T22:27:52 MYT" name="Functional Test Suite" finished-at="2024-08-14T22:28:40 MYT" duration-ms="48461">
     <groups>
     </groups>
-    <test started-at="2024-08-14T17:14:54 MYT" name="Smoke Testing" finished-at="2024-08-14T17:15:15 MYT" duration-ms="21812">
+    <test started-at="2024-08-14T22:27:52 MYT" name="Functional Testing" finished-at="2024-08-14T22:28:40 MYT" duration-ms="48461">
       <class name="athirahrahmat.TestScripts.Logout">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:athirahrahmat.TestScripts.Logout@4550bb58]" started-at="2024-08-14T17:15:10 MYT" name="setUp" finished-at="2024-08-14T17:15:10 MYT" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:athirahrahmat.TestScripts.Logout@747ddf94]" started-at="2024-08-14T22:28:35 MYT" name="setUp" finished-at="2024-08-14T22:28:35 MYT" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="signout()[pri:0, instance:athirahrahmat.TestScripts.Logout@4550bb58]" started-at="2024-08-14T17:15:10 MYT" name="signout" finished-at="2024-08-14T17:15:15 MYT" depends-on-methods="athirahrahmat.TestScripts.Login.login" duration-ms="5309" status="PASS">
+        <test-method signature="signout()[pri:0, instance:athirahrahmat.TestScripts.Logout@747ddf94]" started-at="2024-08-14T22:28:35 MYT" name="signout" finished-at="2024-08-14T22:28:40 MYT" depends-on-methods="athirahrahmat.TestScripts.Login.login" duration-ms="5136" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- signout -->
       </class> <!-- athirahrahmat.TestScripts.Logout -->
-      <class name="athirahrahmat.TestScripts.Login">
-        <test-method is-config="true" signature="invokeBrowser()[pri:0, instance:athirahrahmat.TestScripts.Login@77847718]" started-at="2024-08-14T17:14:44 MYT" name="invokeBrowser" finished-at="2024-08-14T17:14:54 MYT" duration-ms="9995" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- invokeBrowser -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:athirahrahmat.TestScripts.Login@77847718]" started-at="2024-08-14T17:14:54 MYT" name="setUp" finished-at="2024-08-14T17:14:54 MYT" duration-ms="0" status="PASS">
+      <class name="athirahrahmat.TestScripts.SubmitOrder">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:athirahrahmat.TestScripts.SubmitOrder@5b8dfcc1]" started-at="2024-08-14T22:28:26 MYT" name="setUp" finished-at="2024-08-14T22:28:26 MYT" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="login()[pri:0, instance:athirahrahmat.TestScripts.Login@77847718]" started-at="2024-08-14T17:14:54 MYT" name="login" finished-at="2024-08-14T17:14:54 MYT" duration-ms="312" status="PASS">
+        <test-method signature="selectCountry()[pri:0, instance:athirahrahmat.TestScripts.SubmitOrder@5b8dfcc1]" started-at="2024-08-14T22:28:26 MYT" name="selectCountry" finished-at="2024-08-14T22:28:27 MYT" depends-on-methods="athirahrahmat.TestScripts.Checkout.clickCheckout" duration-ms="557" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- selectCountry -->
+        <test-method signature="submitOrder()[pri:0, instance:athirahrahmat.TestScripts.SubmitOrder@5b8dfcc1]" started-at="2024-08-14T22:28:27 MYT" name="submitOrder" finished-at="2024-08-14T22:28:27 MYT" depends-on-methods="athirahrahmat.TestScripts.SubmitOrder.selectCountry" duration-ms="175" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- submitOrder -->
+      </class> <!-- athirahrahmat.TestScripts.SubmitOrder -->
+      <class name="athirahrahmat.TestScripts.Checkout">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:athirahrahmat.TestScripts.Checkout@67c27493]" started-at="2024-08-14T22:28:16 MYT" name="setUp" finished-at="2024-08-14T22:28:16 MYT" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="clickCheckout()[pri:0, instance:athirahrahmat.TestScripts.Checkout@67c27493]" started-at="2024-08-14T22:28:16 MYT" name="clickCheckout" finished-at="2024-08-14T22:28:26 MYT" depends-on-methods="athirahrahmat.TestScripts.ViewCart.verifyProdInCart" duration-ms="10167" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- clickCheckout -->
+      </class> <!-- athirahrahmat.TestScripts.Checkout -->
+      <class name="athirahrahmat.TestScripts.DownloadInvoice">
+        <test-method signature="DownloadCSV()[pri:0, instance:athirahrahmat.TestScripts.DownloadInvoice@2f9f7dcf]" started-at="2024-08-14T22:28:27 MYT" name="DownloadCSV" finished-at="2024-08-14T22:28:35 MYT" depends-on-methods="athirahrahmat.TestScripts.SubmitOrder.submitOrder" duration-ms="8078" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- DownloadCSV -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:athirahrahmat.TestScripts.DownloadInvoice@2f9f7dcf]" started-at="2024-08-14T22:28:27 MYT" name="setUp" finished-at="2024-08-14T22:28:27 MYT" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+      </class> <!-- athirahrahmat.TestScripts.DownloadInvoice -->
+      <class name="athirahrahmat.TestScripts.Login">
+        <test-method is-config="true" signature="invokeBrowser()[pri:0, instance:athirahrahmat.TestScripts.Login@4550bb58]" started-at="2024-08-14T22:27:48 MYT" name="invokeBrowser" finished-at="2024-08-14T22:27:52 MYT" duration-ms="4000" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- invokeBrowser -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:athirahrahmat.TestScripts.Login@4550bb58]" started-at="2024-08-14T22:27:52 MYT" name="setUp" finished-at="2024-08-14T22:27:52 MYT" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="login()[pri:0, instance:athirahrahmat.TestScripts.Login@4550bb58]" started-at="2024-08-14T22:27:52 MYT" name="login" finished-at="2024-08-14T22:27:52 MYT" duration-ms="460" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- login -->
-        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:athirahrahmat.TestScripts.Login@77847718]" started-at="2024-08-14T17:15:16 MYT" name="closeBrowser" finished-at="2024-08-14T17:15:16 MYT" duration-ms="475" status="PASS">
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:athirahrahmat.TestScripts.Login@4550bb58]" started-at="2024-08-14T22:28:40 MYT" name="closeBrowser" finished-at="2024-08-14T22:28:41 MYT" duration-ms="112" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeBrowser -->
       </class> <!-- athirahrahmat.TestScripts.Login -->
-      <class name="athirahrahmat.TestScripts.ViewPastOrders">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:athirahrahmat.TestScripts.ViewPastOrders@6adbc9d]" started-at="2024-08-14T17:15:05 MYT" name="setUp" finished-at="2024-08-14T17:15:05 MYT" duration-ms="1" status="PASS">
+      <class name="athirahrahmat.TestScripts.ViewCart">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:athirahrahmat.TestScripts.ViewCart@77fbd92c]" started-at="2024-08-14T22:28:03 MYT" name="setUp" finished-at="2024-08-14T22:28:03 MYT" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="clickOrdersTab()[pri:0, instance:athirahrahmat.TestScripts.ViewPastOrders@6adbc9d]" started-at="2024-08-14T17:15:05 MYT" name="clickOrdersTab" finished-at="2024-08-14T17:15:10 MYT" depends-on-methods="athirahrahmat.TestScripts.Login.login" duration-ms="5380" status="PASS">
+        <test-method signature="verifyProdInCart()[pri:0, instance:athirahrahmat.TestScripts.ViewCart@77fbd92c]" started-at="2024-08-14T22:28:03 MYT" name="verifyProdInCart" finished-at="2024-08-14T22:28:16 MYT" depends-on-methods="athirahrahmat.TestScripts.AddToCart.selectProduct" duration-ms="13006" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- clickOrdersTab -->
-      </class> <!-- athirahrahmat.TestScripts.ViewPastOrders -->
-      <class name="athirahrahmat.TestScripts.ViewProdDesc">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:athirahrahmat.TestScripts.ViewProdDesc@c8c12ac]" started-at="2024-08-14T17:14:59 MYT" name="setUp" finished-at="2024-08-14T17:14:59 MYT" duration-ms="0" status="PASS">
+        </test-method> <!-- verifyProdInCart -->
+      </class> <!-- athirahrahmat.TestScripts.ViewCart -->
+      <class name="athirahrahmat.TestScripts.AddToCart">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:athirahrahmat.TestScripts.AddToCart@59662a0b]" started-at="2024-08-14T22:28:03 MYT" name="setUp" finished-at="2024-08-14T22:28:03 MYT" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="viewProduct()[pri:0, instance:athirahrahmat.TestScripts.ViewProdDesc@c8c12ac]" started-at="2024-08-14T17:14:59 MYT" name="viewProduct" finished-at="2024-08-14T17:15:05 MYT" depends-on-methods="athirahrahmat.TestScripts.Login.login" duration-ms="5530" status="PASS">
+        <test-method signature="selectProduct()[pri:0, instance:athirahrahmat.TestScripts.AddToCart@59662a0b]" started-at="2024-08-14T22:28:03 MYT" name="selectProduct" finished-at="2024-08-14T22:28:03 MYT" depends-on-methods="athirahrahmat.TestScripts.Login.login" duration-ms="435" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- viewProduct -->
-      </class> <!-- athirahrahmat.TestScripts.ViewProdDesc -->
+        </test-method> <!-- selectProduct -->
+      </class> <!-- athirahrahmat.TestScripts.AddToCart -->
+      <class name="athirahrahmat.TestScripts.FilterByCategories">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:athirahrahmat.TestScripts.FilterByCategories@1b7cc17c]" started-at="2024-08-14T22:27:58 MYT" name="setUp" finished-at="2024-08-14T22:27:58 MYT" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="filterbycheckbox()[pri:0, instance:athirahrahmat.TestScripts.FilterByCategories@1b7cc17c]" started-at="2024-08-14T22:27:58 MYT" name="filterbycheckbox" finished-at="2024-08-14T22:28:03 MYT" depends-on-methods="athirahrahmat.TestScripts.Login.login" duration-ms="5133" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- filterbycheckbox -->
+      </class> <!-- athirahrahmat.TestScripts.FilterByCategories -->
       <class name="athirahrahmat.TestScripts.FilterBySearchbox">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:athirahrahmat.TestScripts.FilterBySearchbox@1623b78d]" started-at="2024-08-14T17:14:54 MYT" name="setUp" finished-at="2024-08-14T17:14:54 MYT" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:athirahrahmat.TestScripts.FilterBySearchbox@4efbca5a]" started-at="2024-08-14T22:27:52 MYT" name="setUp" finished-at="2024-08-14T22:27:52 MYT" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="filterBySearchbox()[pri:0, instance:athirahrahmat.TestScripts.FilterBySearchbox@1623b78d]" started-at="2024-08-14T17:14:54 MYT" name="filterBySearchbox" finished-at="2024-08-14T17:14:59 MYT" depends-on-methods="athirahrahmat.TestScripts.Login.login" duration-ms="5115" status="PASS">
+        <test-method signature="filterBySearchbox()[pri:0, instance:athirahrahmat.TestScripts.FilterBySearchbox@4efbca5a]" started-at="2024-08-14T22:27:52 MYT" name="filterBySearchbox" finished-at="2024-08-14T22:27:58 MYT" depends-on-methods="athirahrahmat.TestScripts.Login.login" duration-ms="5133" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- filterBySearchbox -->
       </class> <!-- athirahrahmat.TestScripts.FilterBySearchbox -->
-    </test> <!-- Smoke Testing -->
-  </suite> <!-- Smoke Test Suite -->
+    </test> <!-- Functional Testing -->
+  </suite> <!-- Functional Test Suite -->
 </testng-results>

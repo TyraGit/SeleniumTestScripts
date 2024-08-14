@@ -42,7 +42,7 @@ public class DownloadInvoice extends BaseTest {
         }
 
         // Wait for the download to complete
-        Thread.sleep(5000); // Adjust the sleep time as necessary
+        Thread.sleep(8000); // Adjust the sleep time as necessary
 
         // Verify the file download dynamically
         String downloadDirPath = Paths.get(System.getProperty("user.dir"), "Downloads").toString();
