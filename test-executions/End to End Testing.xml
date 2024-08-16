@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="Functional Test Suite" thread-count="5">
+<suite name="End to End Testing" thread-count="5">
 	<listeners>
         <listener class-name="athirahrahmat.Utils.CustomListener"/>
     </listeners>
-    <test name="Functional Testing">
+    <test name="E2E Testing">
         <classes>
             <class name="athirahrahmat.TestScripts.Login"/>
             <class name="athirahrahmat.TestScripts.FilterBySearchbox"/>
